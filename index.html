@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Skip to content link for keyboard users -->
+    <a href="#inicio" class="skip-link" id="skip-to-content">Pular para o conteúdo</a>
+    
+    <!-- Screen reader announcer -->
+    <div id="screen-reader-announcer" class="screen-reader-only" aria-live="polite"></div>
+    
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img" loading="lazy">
+            <ul class="nav mt-5" role="menubar" aria-label="Navegação principal">
+                <li class="nav-item" role="none"><a class="nav-link" href="#inicio" role="menuitem">Início</a></li>
+                <li class="nav-item" role="none"><a class="nav-link" href="#galeria" role="menuitem">Galeria</a></li>
+                <li class="nav-item" role="none"><a class="nav-link" href="#contato" role="menuitem">Contato</a></li>
+            </ul>          
+        </nav>
+        <div id="acessibilidade" aria-label="Controles de acessibilidade">
+            <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="reset-fonte" class="btn btn-primary fw-bold" aria-label="Restaurar tamanho da fonte">
+                <i class="bi bi-arrow-counterclockwise"></i>
+            </button>
+            <button id="alto-contraste" class="btn btn-primary fw-bold" aria-label="Alternar alto contraste" aria-pressed="false">
+                <i class="bi bi-circle-half"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5" aria-labelledby="titulo-inicio">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 id="titulo-inicio" class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#tropicalia"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
+                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" alt="A imagem apresenta o grupo musical Os mutantes, são três pessoas cantando em dois microfones" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" aria-labelledby="titulo-tropicalia">
+            <div class="container d-flex align-items-center">
+                <div class="col-md-8 mx-auto">
+                    <h2 id="titulo-tropicalia">O que foi a Tropicália?</h2>
+                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
+                        brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
+                        abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
+                        teve como principal característica a mistura de elementos da cultura brasileira tradicional com
+                        influências estrangeiras, especialmente do rock e da música pop. Fonte: Site Toda Matéria</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" aria-labelledby="titulo-galeria">
+            <h2 id="titulo-galeria" class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 mb-4">
+                        <figure>
+                            <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
+                                class="img-fluid rounded-5" loading="lazy" alt="Jorge Ben e o Trio Mocotó no Teatro da Lagoa, 1971">
+                            <figcaption class="text-center mt-2 fst-italic">Jorge Ben e o Trio Mocotó, 1971</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <figure>
+                            <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
+                                loading="lazy" alt="Os Mutantes em apresentação">
+                            <figcaption class="text-center mt-2 fst-italic">Os Mutantes</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 mb-4">
+                        <figure>
+                            <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" 
+                                loading="lazy" alt="Gilberto Gil nos anos 1960">
+                            <figcaption class="text-center mt-2 fst-italic">Gilberto Gil, anos 1960</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <figure>
+                            <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
+                                class="img-fluid rounded-5" loading="lazy" alt="Caetano Veloso no III Festival da Música Popular">
+                            <figcaption class="text-center mt-2 fst-italic">Caetano Veloso no III Festival da Música Popular</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" aria-labelledby="titulo-contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 id="titulo-contato" class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo" aria-required="true">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email" aria-required="true">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem" aria-required="true"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">
+                                <i class="bi bi-send me-2"></i>Enviar mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <div class="social-icons">
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+
